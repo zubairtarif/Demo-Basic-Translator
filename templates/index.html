@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF=8">
+		<title>Translator V0.1</title> 
+		<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+	</head>
+
+	<body>
+		
+	    <div>
+	    	<br>
+	    	<h1>Basic Translator V0.1</h1>
+	    	<br>
+	    	{{welcome}}
+
+			<form action="/Translation" method="POST"> 
+	
+			<br>
+			<textarea name="name_input" rows="14" cols="10" wrap="soft" class="inputtab"> </textarea>
+			
+			<br><br>
+			<input type="submit" value="Submit" id="greet" class="btn">
+			<br>
+			<br>
+			<div class = "output">
+			{{prompt}}<br><br><br>
+			{{message}}
+			</div>
+			<br><br>
+
+		</form>
+
+
+
+
+	    
+	    	
+
+
+
+	
+	<footer>
+		<br>
+  		<p>Author: Zubair Tarif</p>
+  		<p><a href="mailto:zubair.tarif@gmail.com">zubair.tarif@gmail.com</a></p>
+  		<br>
+  		<br>
+	</footer>
+
+	</div>
+	</body>
+
+	
+
+</html>
